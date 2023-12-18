@@ -1,0 +1,355 @@
+/* Main and Header*/
+html
+{
+   font-size: 16px;
+   font-family: Arial;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #222;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+}
+
+h1, h2, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	/* color: #aaa; */
+}
+
+#wrap {
+	/* width: 1600px; */
+	/* width: 100%; */
+	background: #fff;
+	margin: 1% auto;
+	padding: 1%;
+}
+
+#header p {
+	padding: 0;
+	margin: 0;
+	clear: both;
+	font-size: 24px;
+}
+
+/* Navigation Bar*/
+#navigation {
+	width:100%;
+	background: #000;
+	color: #fff;
+	overflow: hidden;
+	clear: both;
+	height: 36px;
+	margin: 0px 0;
+	float:left;
+}
+
+#navigation a {
+	color: #fff;
+}
+
+#navigation a:hover {
+	color: #000;
+}
+#navigation ul {
+	margin: 9px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#navigation ul li {
+	display: inline;
+	
+}
+
+#navigation ul li a {
+	height: 37px;
+	padding: 10px 15px;
+	text-decoration: none;
+	-webkit-transition: background 1s;
+	transition:  background 1s;
+}
+
+#navigation ul li a:hover {
+	background: #e4e4e4;
+}
+#right{
+	position:relative;
+	float:right;
+}
+
+#user{
+	font-size: 12px;
+	float:right;
+}
+/* Current Installs Sidebar*/
+#current_installs{
+	background: #333;
+	color: #bbb;
+	overflow: hidden;
+	clear: both;
+	margin: 10px auto;
+	padding: 0;
+	list-style-type: none;
+	border: solid;
+	border-color: #bbb;
+	width:auto;
+}
+
+#current_installs a {
+	color: #aaa;
+	display: block;
+}
+
+#current_installs a:hover {
+	color: #ddd;
+}
+
+#current_installs td {
+	white-space: nowrap;
+	border-style: none;
+	border-top: 1px solid #fff;
+	vertical-align: top;
+}
+
+#current_installs tr:hover{
+	background-color: #111!important;
+}
+
+#current_installs td a{
+	text-decoration: none;
+}
+
+#current_installs th {
+	padding: 0;
+	vertical-align: middle;
+	text-align: center;
+	color: bbb#;
+	background-color: #111;
+}
+
+#current_installs th,
+#current_installs td {
+	padding: 5px;
+	
+	border-color: #fff;
+}
+/* Widgets */
+#middlebar {
+	margin:auto;
+	width: 60%;
+	padding: 5px;
+	/* margin-right: 0%; */
+	float: right;
+	/* background: #333; */
+}
+#leftbar {
+	margin:auto;
+	width: 38.5%;
+	padding: 5px;
+	/* padding-right: 10%; */
+	float: left;
+	/* background: #333; */
+}
+
+#rightbar {
+	margin:auto;
+	width: auto;
+	padding: 5px;
+	/* float: left; */
+	/* background: #333; */
+}
+
+#widgets {
+	width: 100%;
+	height: height 800px;
+	/* margin-right: 1%; */
+	/* background: #333; */
+	/* float: left; */
+	/* -webkit-animation: fadein 3s;
+	animation: fadein 3s; */
+	display: block;
+}
+
+/* Current Installs Main Display */
+#current_installs_main{
+	background: #333;
+	color: #bbb;
+	overflow: hidden;
+	clear: both;
+	margin: auto;
+	padding: 0;
+	list-style-type: none;
+	border: solid;
+	border-color: #bbb;
+	width: auto;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+#current_installs_main a {
+	color: #aaa;
+	display:block;
+}
+
+#current_installs_main td {
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+#current_installs_main td a{
+	text-decoration: none;
+}
+
+#current_installs_main tr:hover {
+	background-color: #111;
+}
+
+#current_installs_main th {
+	vertical-align: middle;
+	text-align: center;
+	color: bbb#;
+	background-color: #111;
+}
+
+#current_installs_main th,
+#current_installs_main td {
+	padding: 5px;
+	border: 1px solid #fff;
+}
+
+#options {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1;
+	font-size: 12px;
+}
+
+#new_button {
+	margin: 0 45% 1% 45%;
+	padding: 2px;
+	width: auto;
+	height: auto;
+	background-color: #333;
+	text-align: center;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+
+#new_button a {
+	display:block;
+	vertical-align: middle;
+	color: #aaa;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+#new_button:hover {
+	background-color: #111;
+}
+
+#search {
+	display:inline;
+	margin: 0 45% 0% 45%;
+	padding: 0px;
+	width: auto;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Content */
+#content {
+	clear: both;
+	overflow: hidden;
+}
+
+#main {
+	width: 100%;
+	margin-right: 1%;
+	float: left;
+	-webkit-animation: fadein 3s;
+	animation: fadein 3s;
+}
+
+#main_double {
+	width: 100%;
+	/* -webkit-animation: fadein 3s;
+	animation: fadein 3s; */
+}
+
+/* Install Form */
+#install{
+	float: center;
+
+}
+
+td#option{
+	width: 80px
+}
+
+input#option_text{
+	width: 80px;
+}
+
+/* Relocation Form */
+input#input_wide{
+	width: 100%;
+}
+
+input#input_text_box{
+	width: 250px;
+}
+
+/* Footer */
+#footer {
+	clear: both;
+	overflow: hidden;
+	margin: 0;
+	border-top: 4px solid #000;
+}
+
+.footer_half {
+	width: 50%;
+	float: left;
+}
+
+.t_align_right {
+	text-align: right;
+}
+
+/* Register */
+a.register {
+	display: block;
+	position: absolute;
+	top: 2%;
+	background-color: #333;
+	color: #bbb;
+	padding: 4px;
+	text-decoration: none;
+	left: 94%;
+}
+
+select.docs {
+	min-width: 250px;
+}
+
+
+/* Functions */
+@-webkit-keyframes fadein {
+    0%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadein {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}

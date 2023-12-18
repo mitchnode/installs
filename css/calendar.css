@@ -1,0 +1,455 @@
+/* Calendar */
+h2,h3{
+	text-align: center;
+}
+
+
+div.cell_top {
+	background-color: #333;
+	color: #aaa;
+}
+div.cell {
+	font-size: 14px;
+	height:25px;
+	border-bottom: 1px dashed #aaa;
+	margin: 0px;
+	padding: 0px;
+}
+
+td.cell {
+	font-size: 14px;
+	height:25px;
+	border-bottom: 1px dashed #aaa;
+	border-right: 1px solid #fff;
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+	overflow: hidden;
+}
+
+tr.cell {
+	font-size: 14px;
+	height:25px;
+	/* border-bottom: 1px dashed #aaa; */
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	/* overflow: hidden; */
+	max-height: 25px;
+}
+
+.time_frame {
+	position:relative;
+	margin: 0px;
+	padding: 0px;
+}
+.timex {
+	width: 80px;	
+}
+
+#day_title {
+	/* display: inline; */
+	width: 100%;
+	background-color: #333;
+	color: #aaa;
+}
+
+#day_view {
+	width:100%;
+}
+
+#week_view {
+	width:100%;
+	border: none;
+	border-collapse: collapse;
+}
+
+#week_view th {
+	background-color: #333;
+	border: none;
+	border-collapse: collapse;
+	color: #aaa;
+	padding: 0px;
+	margin: 0px;
+}
+
+table.day_week_table {
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	position:relative;
+	margin: 0px;
+	padding: 0px;
+	border-collapse: collapse;
+	width:100%;
+}
+
+table.day_table {
+	position:relative;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+}
+
+table.daytable tr{
+	height: 25px;
+}
+
+
+a.day_nav {
+	font-size: 14px;
+	/* display: block; */
+	background-color: #333;
+	color: #aaa;
+	text-decoration: none;
+	margin: 100px;
+}
+
+a:hover.day_nav  {
+	background-color: #111;
+}
+
+#calendar{
+	background: #fff;
+	color: #000;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	clear: both;
+	/* margin: auto; */
+	padding: 0;
+	list-style-type: none;
+	border: solid;
+	border-color: #000;
+	border-collapse: collapse;
+	width: 100%;
+	/* height: auto; */
+}
+
+#calendar th {
+	padding: 0;
+	vertical-align: middle;
+	text-align: center;
+	color: #aaa;
+	background-color: #333;
+}
+
+#calendar td {
+	width: 14%;
+	/* height: 140px; */
+	border-style: none;
+	border: 1px solid #bbb;
+	vertical-align: top;
+	padding-bottom: 8%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+
+/* Event for Tenative */
+#calendar td a{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	background-color: #55e;
+	color: #111;
+	text-decoration: none;
+	font-size: 12px;
+	border: 1px solid #000;
+	width: auto;
+}
+
+#calendar td a:hover{
+	background-color: #bbb!important;
+	color: #222!important;
+}
+
+div#events{
+	width:14vw;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+a#day_event {
+	font-size: 12px;
+	overflow:hidden;
+}
+#day_event:hover{
+	background-color: #bbb!important;
+	color: #222!important;
+}
+
+/* Event for None */
+a._dayview {
+	display: inline-block;
+	background-color: #55e;
+	color: #111;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	border-right: 1px solid #fff;
+}
+
+/* Event for Other */
+a.Other_dayview {
+	display: inline-block;
+	background-color: #ff6;
+	color: #000;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	border-right: 1px solid #fff;
+}
+
+/* Event for Peter */
+a.Peter_dayview {
+	display: inline-block;
+	background-color: #90f;
+	color: #ddd;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	border-right: 1px solid #fff;
+}
+
+
+/* Event for Mitch */
+a.Mitch_dayview {
+	display: inline-block;
+	background-color: #f72!important;
+	color: #000!important;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	border-right: 1px solid #fff;
+}
+
+/* Event for Ash */
+a.Matt_dayview {
+	display: inline-block;
+	background-color: #78D168!important;
+	color: #aaa!important;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	border-right: 1px solid #fff;
+}
+
+/* Event for No Tech/Relocation */
+a.No_Tech_dayview {
+	display: inline-block;
+	background-color: #e55!important;
+	color: #111!important;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	border-right: 1px solid #fff;
+}
+
+
+
+
+/* Event for Other */
+a.Other {
+	display: block;
+	background-color: #ff0!important;
+	color: #000!important;
+	text-decoration: none;
+}
+
+/* Event for Peter */
+a.Peter {
+	display: block;
+	background-color: #90f!important;
+	color: #ddd!important;
+	text-decoration: none;
+}
+
+/* Event for Mitch */
+a.Mitch {
+	display: block;
+	background-color: #f72!important;
+	color: #000!important;
+	text-decoration: none;
+}
+
+/* Event for Matt */
+a.Matt {
+	display: block;
+	background-color: #78d168!important;
+	color: #aaa!important;
+	text-decoration: none;
+}
+
+/* Event for No Tech/Relocation */
+a.No_Tech {
+	display: block;
+	background-color: #e55!important;
+	color: #111!important;
+	text-decoration: none;
+}
+
+/* Schedule Widget */
+/* Schedule Event for Mitch */
+tr.Mitch_s {
+	/* display: block; */
+	background-color: #f72;
+	text-decoration: none;
+	/* font-size: 11px; */
+}
+
+tr:hover.Mitch_s a{
+	color: #eee!important;
+}
+
+tr.Mitch_s a{
+	color: #000!important;
+}
+
+/* Schedule Event for Peter */
+tr.Peter_s {
+	/* display: block; */
+	background-color: #90f;
+	text-decoration: none;
+	/* font-size: 11px; */
+}
+
+tr:hover.Peter_s a{
+	color: #eee!important;
+}
+
+tr.Peter_s a{
+	color: #ddd!important;
+}
+
+/* Schedule Event for Matt */
+tr.Matt_s {
+	/* display: block; */
+	background-color: #78d168;
+	text-decoration: none;
+	/* font-size: 11px; */
+}
+
+tr:hover.Matt_s a{
+	color: #eee!important;
+}
+
+tr.Matt_s a{
+	color: #aaa!important;
+}
+
+
+/* Schedule Event for No Tech/Relocation */
+tr.No_Tech_s  {
+	/* display: block; */
+	background-color: #e55;
+	text-decoration: none;
+	/* font-size: 11px; */
+}
+
+tr:hover.No_Tech_s a{
+	color: #eee!important;
+}
+
+tr.No_Tech_s a{
+	color: #000!important;
+}
+
+/* Schedule Event for Other */
+tr.Other_s {
+	/* display: block; */
+	background-color: #ff6;
+	text-decoration: none;
+	/* font-size: 11px; */
+}
+
+tr:hover.Other_s a{
+	color: #eee!important;
+}
+
+tr.Other_s a{
+	color: #000!important;
+}
+
+#days {
+	height:20px!important;
+	text-align: center;
+	background-color: #555;
+}
+
+#prev_month {
+	float: left;
+}
+
+#next_month {
+	float: right;
+}
+
+a.month_nav {
+	font-size: 14px;
+	display: block;
+	background-color: #333;
+	color: #aaa;
+	text-decoration: none;
+	width:auto;
+}
+
+a:hover.month_nav  {
+	background-color: #111;
+}
+
+input#input_text{
+	width:100%;
+}
+
+textarea#comments{
+	width:100%;
+	height:auto;
+	resize: none;
+}
+
+#event{
+	float: center;
+	color: #e4e4e4;
+
+}
+
+a.new_event{
+	display:block;
+	background-color: #fff!important;
+	color: #000!important;
+	text-align:center;
+	overflow: hidden;
+	clear: both;
+	border: none!important;
+}
+
+#cal_button {
+	margin: 0 45% 1% 45%;
+	padding: 2px;
+	width: 200px;
+	height: auto;
+	background-color: #333;
+	text-align: center;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+
+#cal_button a {
+	display:block;
+	color: #aaa;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+#cal_button:hover {
+	background-color: #111;
+}
+
+/* End of Calendar */

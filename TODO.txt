@@ -1,0 +1,18 @@
+//Installs
+
+
+--------------------------
+
+//Relocations
+
+--------------------------
+
+//Extras
+--Setup Workflow to send email based on install status.
+--Send Event Details to tech once booked. (maybe include sales form & network sheet)
+--Compress PDFs
+--------------------------
+
+//Calendar
+
+-----------------------------------------------------
